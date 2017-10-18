@@ -1,0 +1,332 @@
+#container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+html{
+    display: block;
+}
+body {
+    background-color: #FFFFFF;
+    font-size: 0.6875em;
+    -ms-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    font-family: "Courier New", Courier, Monaco;
+    font-style: normal;
+    font-variant: normal;
+}
+
+header {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 3em;
+}
+
+header img {
+    width: 320px;
+    height: auto;
+    -webkit-box-shadow: 8px 14px 16px 0px rgba(0, 0, 0, 0.37);
+    box-shadow: 8px 14px 16px 0px rgba(0, 0, 0, 0.37);
+}
+header p{
+    padding-top: 1em;
+}
+
+img {
+    /*Style to create fluid image*/
+    max-width: 100%;
+}
+h3 {
+    font-size: 1em;
+    margin-top: 0;
+}
+fieldset {
+    display: block;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    min-width: -webkit-min-content;
+    border-width: 2px;
+    border-style: none;
+    border-color: threedface;
+    border-image: initial;
+}
+
+select {
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    color: black;
+    background-color: white;
+    cursor: default;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+}
+#tabs{
+    width: 850px;
+    max-width: 75%;
+    margin: auto;
+    overflow: auto;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+#tabs .button{
+    float: left;
+    padding: 0.81818em 0;
+    background: none;
+    color:#999;
+    border: 1px dotted #999;
+    width: 33.33%;
+}
+#tabs .button:focus{
+    background: #636363;
+    color: #fff;
+}
+#wrap {
+   /* width: 850px;
+    max-width: 75%;
+    margin: auto;
+    overflow: auto;
+    position: relative;*/
+    height: 42.72727em;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 60.54545em;
+    max-width: 60.54545em;
+}
+#tabs{
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 60.54545em;
+    max-width: 60.54545em;
+    border-bottom: none;
+}
+#wrap .personal-settings{
+    //border: 1px dotted #999;
+    border-bottom: 0;
+    position: relative;
+}
+#settings-body.personal-settings {
+    height: 34.18182em;
+    border-top: none;
+}
+#settings-body {
+    border-top: 1px dotted #999;
+    height: 315px;
+    overflow: auto;
+    position: relative;
+}
+#address {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+#address input[type="text"], #address input[type="email"], #address input[type="tel"], #address input[type="number"]{
+    width: 15.83333em;
+}
+#billing {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+#footer {
+    /*border-bottom: 1px dotted #999;
+    border-top: 1px dotted #999;*/
+    border: 1px dotted #999;
+    padding-bottom: 4px;
+    padding-top: 2px;
+    overflow: auto;
+    float: right;
+    padding-left: 26.45em;
+}
+#footer::before, #footer::after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+#footer .button {
+    float: left;
+    margin: 0.36364em 0.36364em 0 0;
+    padding: 10px 20px;
+    width: auto;
+}
+#footer p{
+    color: #666;
+    float: left;
+    font-family: Courier,Monaco;
+    font-size: 0.90909em;
+    font-weight: bold;
+    line-height: 1.3;
+    padding: 0.6em 1em;
+}
+#nav {
+    line-height: 1;
+    margin: 0 auto 3.63636em;
+    width: 50%;
+    max-width: 100%;
+}
+.button {
+    background: red;
+    border: 1px solid red;
+    border-radius: 0;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    padding: 0.27273em 0;
+    text-align: center;
+    white-space: nowrap;
+    width: 8.90909em;
+}
+.wrap .tabs b {
+    padding: 0.81818em 0;
+}
+.personal-settings {
+    border: 1px dotted #999;
+    border-top: none;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: .99em;
+    overflow: hidden;
+    /*margin: 0 auto;
+    overflow: hidden;
+    max-width:100%;
+    min-width:800px;
+    max-height:500px;
+    min-height:21%;
+    position: relative;*/
+}
+.personal-settings #address{
+	flex: 1;
+}
+.personal-settings #billing{
+	flex: 1;
+}
+.personal-settings h3 {
+    background: #636363;
+    color: #fff;
+    margin-bottom: 0;
+    width: 100%;
+}
+.personal-settings h3 b {
+    display: block;
+    font-weight: normal;
+    padding: 0.36364em 0.90909em;
+}
+
+b, strong {
+    font-weight: bold;
+}
+.personal-settings label {
+    background: lightgray;
+    float: left;
+    font-size: 1em;
+    line-height: 2.5em;
+    margin-right: 0.41667em;
+    padding-left: 0.83333em;
+    width: 8.5em;
+}
+.personal-settings input[type="text"],
+.personal-settings input[type="email"],
+.personal-settings input[type="tel"],
+.personal-settings input[type="number"],
+.personal-settings select {
+    color: #111;
+    background-color: #fff;
+    border: 1px solid #CCC;
+    font-size: 12px;
+    font-family: inherit;
+    padding: 5px;
+    border-radius: 3px;
+}
+.personal-settings .form-group {
+	margin-bottom: 6px;
+}
+/*.personal-settings input[type="text"],
+.personal-settings input[type="email"],
+.personal-settings input[type="tel"],
+.personal-settings input[type="number"],
+.personal-settings select, .personal-settings label{
+
+}*/
+.personal-settings input[type="text"],
+.personal-settings input[type="email"] {
+    display: inline-block;
+    width: 15em;
+}
+.personal-settings input {
+    margin-bottom: 6px;
+}
+.personal-settings div.string::before, .personal-settings div.string::after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.personal-settings .info {
+	flex: 1;
+}
+.personal-settings label {
+    display:inline-block;
+}
+/*#billing p{
+	padding-top: .3em;
+}*/
+.checkboxes label{
+	display: inline;
+    background: none;
+    float: none;
+}
+.checkboxes input[type="checkbox"]{
+	float: left;
+}
+.checkboxes p{
+	padding-bottom: 10.8em;
+}
+.button {
+    background: red;
+    border: 1px solid red;
+    border-radius: 0;
+    font-family: inherit;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    padding: 0.27273em 0;
+    text-align: center;
+    white-space: nowrap;
+    width: auto;
+}
+.button.save, .button.reset {
+    background: #000;
+    border-color: #000;
+}
+#nav{
+    list-style:none;
+    padding-top: 5em;
+    text-align:center;
+}
+#nav li{
+    display:inline;
+}
+#nav a{
+    display:inline-block;
+    padding:10px;
+}

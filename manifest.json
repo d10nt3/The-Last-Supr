@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "The Last Supr",
+    "options_page": "options/options.html",
+    "version": "0.1",
+
+    "content_scripts": [{
+        "matches": ["*://*.supremenewyork.com/checkout"],
+        "js": ["scripts/jquery.js", "scripts/autofill.js"],
+        "run_at": "document_idle"
+ }, {
+        "matches": ["*://*.supremenewyork.com/shop/*"],
+        "exclude_globs": ["*all*", "*cart*", "*new*"],
+        "js": ["scripts/jquery.js", "scripts/findItem.js"],
+        "run_at": "document_idle"
+ }, {
+        "js": ["scripts/jquery.js", "scripts/size_to_cart.js"],
+        "matches": ["*://*.supremenewyork.com/shop/jackets/*/*", "*://*.supremenewyork.com/shop/tops-sweaters/*/*", "*://*.supremenewyork.com/shop/pants/*/*", "*://*.supremenewyork.com/shop/shirts/*/*", "*://*.supremenewyork.com/shop/sweatshirts/*/*", "*://*.supremenewyork.com/shop/pants/*/*", "*://*.supremenewyork.com/shop/shorts/*/*", "*://*.supremenewyork.com/shop/t-shirts/*/*", "*://*.supremenewyork.com/shop/hats/*/*", "*://*.supremenewyork.com/shop/bags/*/*", "*://*.supremenewyork.com/shop/accessories/*/*", "*://*.supremenewyork.com/shop/skate/*/*", "*://*.supremenewyork.com/shop/shoes/*/*"],
+        "run_at": "document_idle"
+ }],
+    "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "http://*/*",
+    "https://*/*"
+  ],
+    "background": {
+        "persistent": true,
+        "scripts": ["scripts/jquery.js", "scripts/background.js"]
+    }
+}

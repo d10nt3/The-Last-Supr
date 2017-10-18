@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>The Last Supr</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple Supreme bot to ensure your next piece">
+    <meta name="author" content="Dionte Hampton">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="logo-text">
+                <a href="index.html"><img src="images/header2.jpg" alt="Last Supr Image"></a>
+                <p>Built by Dionte Hampton : UI respect to Supreme</p>
+                <!--<div id="clock"></div>-->
+            </div>
+        </header>
+        <!-- Use the nav area to add hyperlinks to other pages within the website -->
+        <nav>
+        </nav>
+        <!-- Main content of the bot -->
+        <div id="main">
+            <div class="product">
+                <h3>Find Item</h3>
+                <select class="form-control" name="itemtype" id="itemtype">
+                      <option selected disabled>Category</option>
+                      <option value="/shop/all/jackets">jackets</option>
+                      <option value="/shop/all/shirts">shirts</option>
+                      <option value="/shop/all/tops_sweaters">tops/sweaters</option>
+                      <option value="/shop/all/sweatshirts">sweatshirts</option>
+                      <option value="/shop/all/pants">pants</option>
+                      <option value="/shop/all/t-shirts">t-shirt</option>
+                      <option value="/shop/all/hats">hat</option>
+                      <option value="/shop/all/bags">bags</option>
+                      <option value="/shop/all/accessories">accessories</option>
+                      <option value="/shop/all/skate">skate</option>
+                      <option value="/shop/all/shoes">shoes</option>
+                      <option value="/shop/all/shorts">shorts</option>
+                </select>
+                <input class="form-control" name="itemname" type="text" id="itemname" placeholder="Item Keyword ex. Box Logo" value="" required autocomplete="off">
+                <input class="form-control" name="itemcolor" type="text" id="itemcolor" placeholder="Color Keyword ex. White" value="" required autocomplete="off">
+                <select class="form-control" name="itemsize" id="itemsize">
+                      <option selected disabled>Please select a size</option>
+                      <option value="Small">Small</option>
+                      <option value="Medium">Medium</option>
+                      <option value="Large">Large</option>
+                      <option value="XLarge">XLarge</option>
+                      <option value="30">30</option>
+                      <option value="32">32</option>
+                      <option value="34">34</option>
+                      <option value="36">36</option>
+                      <option value="8">8</option>
+                      <option value="8.5">8.5</option>
+                      <option value="9">9</option>
+                      <option value="9.5">9.5</option>
+                      <option value="10">10</option>
+                      <option value="10.5">10.5</option>
+                      <option value="11">11</option>
+                      <option value="11.5">11.5</option>
+                      <option value="12">12</option>
+                      <option value="12.5">12.5</option>
+                      <option value="13">13</option>
+                      <option value="0">One Size</option>
+                </select>
+                <label for="confirmitem" class="string required control-label">Confirm Item?</label>
+                <input class="form-control" type="checkbox" id="confirmitem" value="">
+                <label for="autoCartout" class="string required control-label">Auto Checkout from cart?</label>
+                <input class="form-control" type="checkbox" id="autoCartout" value="">
+                <label for="searchItem" class="string required control-label">Search for your item?</label>
+                <input class="form-control" type="checkbox" id="searchItem" value="">
+                <label for="autobuy" class="string required control-label">Autobuy from billing info page?</label>
+                <input class="form-control" type="checkbox" id="autobuy" value="">
+            </div>
+            <div id="tabs">
+                <button class="button item-finder" id="item-finder">ITEM FINDER</button>
+                <button class="button autofill-info" id="autofill-info">AUTOFILL INFORMATION</button>
+                <button class="button run-settings" id="run-settings">SETTINGS</button>
+            </div>
+            <div id="wrap">
+                <div class="personal-settings" id "settings-body">
+                    <div id="address">
+                        <h3><b>Billing Info</b></h3>
+                        <div class="info">
+                            <fieldset>
+                                <p>must be the same as your credit card address</p>
+                                <div class="form-group form-group-sm">
+                                    <label for="name" class="string required control-label">Name</label>
+                                    <div class="string required">
+                                        <input type="text" class="form-control input-sm" id="name" name="name" placeholder="james jebbia" autocomplete="on">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="email" class="string required control-label">Email</label>
+                                    <div class="string required">
+                                        <input type="email" class="form-control input-sm" id="email" name="email" placeholder="shop@supremenewyork.com" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="tel" class="string required control-label">Tel</label>
+                                    <div class="string required">
+                                        <input type="tel" class="form-control input-sm" id="tel" name="tel" placeholder="3138334000" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="address1" class="string required control-label">Address</label>
+                                    <div class="string required">
+                                        <input type="text" class="form-control input-sm" id="address" name="address line 1" placeholder="274 Lafayette St" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="address2" class="string required control-label">Address 2</label>
+                                    <div class="string required">
+                                        <input type="text" class="form-control input-sm" id="address2" name="address line 2" placeholder="APT HH104 (optional)" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="inputPassword3" class="string required control-label">Zip</label>
+                                    <div class="string required">
+                                        <input type="number" class="form-control input-sm" id="zip" name="zip" placeholder="10012" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="inputPassword3" class="string required control-label">City</label>
+                                    <div class="string required">
+                                        <input type="text" class="form-control input-sm" id="city" name="city" placeholder="New York" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="inputPassword3" class="string required control-label">State</label>
+                                    <div class="string required">
+                                        <select class="form-control input-sm" data-size="5" id="state" name="state">
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AS">AS</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FM">FM</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="GU">GU</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MH">MH</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="MP">MP</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PW">PW</option>
+                            <option value="PA">PA</option>
+                            <option value="PR">PR</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VI">VI</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="inputPassword3" class="string required control-label">Country</label>
+                                    <div class="string required">
+                                        <select class="form-group form-group-sm" name="country" id="country">
+								<option value="USA">United States</option>
+                            </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div id="billing">
+                        <h3><b>Terms and Card Info</b></h3>
+                        <div class="info">
+                            <fieldset>
+                                <p></p>
+                                <div class="form-group form-group-sm">
+                                    <label for="card" class="string required control-label">Type</label>
+                                    <div class="form-group form-group-sm">
+                                        <select class="form-group form-group-sm" id="card" name="card">
+                            <option value="visa">Visa</option>
+                            <option value="master">Mastercard</option>
+                            <option value="american_express">American Express</option>
+                        </select>
+                                    </div>
+                                    <div class="form-group form-group-sm">
+                                        <label for="number" class="string required control-label">Number</label>
+                                        <div class="string required">
+                                            <input class="form-control input-sm" type="text" id="number" name="number" placeholder="" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group-sm">
+                                        <label for="month" class="string required control-label">Exp. date</label>
+                                        <div class="form-group form-group-sm">
+                                            <select class="form-group form-group-sm" id="month" name="month">
+                              <option value="01">01</option>
+                              <option value="02">02</option>
+                              <option value="03">03</option>
+                              <option value="04">04</option>
+                              <option value="05">05</option>
+                              <option value="06">06</option>
+                              <option value="07">07</option>
+                              <option value="08">08</option>
+                              <option value="09">09</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                          </select>
+                                            <select class=" form-control input-sm" id="year" name="year">
+                              <option value="2017">2017</option>
+                              <option value="2018">2018</option>
+                              <option value="2019">2019</option>
+                              <option value="2020">2020</option>
+                              <option value="2021">2021</option>
+                              <option value="2022">2022</option>
+                              <option value="2023">2023</option>
+                              <option value="2024">2024</option>
+                              <option value="2025">2025</option>
+                              <option value="2026">2026</option>
+                              <option value="2027">2027</option>
+                          </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group-sm">
+                                        <label for="cvv" class="string required control-label">CVV</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" class="form-control input-sm" id="cvv" name="cvv" placeholder="111" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkboxes">
+                                    <input type="checkbox" name="autofill-billing" id="autofill-billing" />
+                                    <label for="autofill-billing">Would you like to Automatically fill your billing information on the checkout page?</label>
+                                    <p>*Fix layout of this later</p>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="footer">
+                    <div id="buttons">
+                        <button class="button save" id="save">Save</button>
+                        <button class="button reset" id="reset">Reset Fields</button>
+                        <button class="button webstore" id="webstore">Open Web Shop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Supr</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="scripts/jquery.js"></script>
+<!--    <script src="scripts/bootstrap.min.js"></script>-->
+    <script src="scripts/save_info.js"></script>
+    <script src="scripts/save_item_search.js"></script>
+    <script src="scripts/openWebstore.js"></script>
+    <script src="scripts/background.js"></script>
+</body>
+</html>
